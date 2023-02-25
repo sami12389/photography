@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import '/photography../styles/globals.css'
 import {Footer, Navbar} from "../components"
 
 
