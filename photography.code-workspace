@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"name": "photography",
+		"path": "."
+	},
+	{
+		"name": "lib",
+		"path": "../lib"
+	}
+],
+  "settings": {}
+}

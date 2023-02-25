@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300&family=Lora:ital@1&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+li, p, small{
+  font-family: 'Inter', sans-serif;
+}
+
+h2, h3{
+font-family: 'Bebas Neue', cursive;
+}
+
+.navContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 200px;
+  padding: 20px 20px;
+  background-color: rgba(255, 255, 255, 0.56);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navListContainer{
+  display: none;
+}
+
+.logoImg{
+  border-radius: 100%;
+}
+
+.navIcon{
+  cursor: pointer;
+}
+
+
+.menuBar{
+  display: flex;
+  background-color: white;
+  z-index: 10;
+}
+
+.heroContainer{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.heroText{
+  width:100%;
+}
+
+.heroHeading{
+  font-size: 70px;
+}
+
+.heroParagraph {
+  font-size: 22px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.heroIcon{
+  position: absolute;
+  top: 0;
+  right: -30px;
+  color: aqua;
+  background-color: black;
+}
+
+.btnMore{
+  margin-top: 40px;
+  padding: 15px;
+  width: 200px;
+  border-radius: 50px 0px 0px 50px;
+  font-size: 20px;
+  position: relative;
+  outline: none;
+  border: 1px solid aqua;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.featuresBtn{
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    border: 1px solid aqua;
+}
+
+.btnMore:hover{
+  background-color: aqua;
+  color: black;
+}
+
+.item{
+  list-style-type: none;
+}
+
+.heroImage{
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+.marquee {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 15s linear infinite;
+  width: 180%;
+}
+
+.track:hover{
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+.categories{
+  display: none;
+}
+
+.heroCategories{
+    border-radius: 100%;
+}
+
+.features{
+  margin: 100px 0px;
+}
+
+.featuresContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.featureContainer {
+  border: 1px solid aqua;
+  padding: 50px;
+  border-radius: 3%;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.featuresTop{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column-reverse;
+}
+
+.featuresText{
+  margin-left: 100px;
+}
+
+.featuresHeading,
+.featuresPara{
+  color: white;
+}
+
+.featuresHeading{
+  font-size: 70px;
+}
+
+.featuresPara{
+  font-size: 25px;
+}
+
+.phoneImg{
+  width: 600px;
+  margin-top: 50px;
+}
+
+
+.featuresImage{
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.featuresCategory{
+  color: white;
+  margin-top: 20px;
+}
+
+
+.reviewsContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 100px;
+}
+
+.itemContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.review{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+.reviewsText{
+  width: 600px;
+  font-size: 25px;
+  margin-bottom: 50px;
+  font-family: 'Lora', serif;
+}
+
+.profileImage{
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+
+
+.reviewName{
+  font-size: 30px;
+  margin: 20px;
+  margin-bottom: 0px;
+}
+
+.reviewPosition{
+  margin-bottom: 20px;
+  gap: 20px;
+  color: rgb(150, 149, 149);
+}
+
+.reviewIcon{
+  margin: 0px 80px;
+  cursor: pointer;
+}
+
+.footerContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  padding: 40px 0px
+}
+
+
+.emailSection{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formHeader{
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+.inputField{
+  font-size: 25px;
+  width: 80vw;
+  margin: 0px;
+  padding: 0px;
+}
+
+.otherWorks{
+    margin: 20px 0px;
+}
+
+.footerOtherWorksHeading{
+  font-size: 25px;
+}
+
+.worksLinks{
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.worksLinks li{
+  margin-top: 12px;
+}
+
+.iconsContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icon{
+  margin: 20px;
+  cursor: pointer;
+}
+
+.required{
+  color: red;
+}
+
+.btnSubmit{
+  margin-top: 30px;
+  width: 50%;
+  padding: 12px;
+  font-weight: 900;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: 1px solid aqua;
+}
+
+.btnSubmit:hover{
+  background-color: aqua;
+  color: black;
+}
+
+.emailLabel{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+
+/* gallery */
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.galleryMainContainer{
+  display: flex;
+}
+
+.categoriesFilter{
+  padding: 30px 150px 0px 15px;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.categoriesHeader{
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.categoriesFilter li{
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.link{
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  margin: 0px 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+.link:hover{
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 800px) {
+  .navContainer {
+      padding: 10px 30px;
+    }
+
+    .navListContainer {
+      display: flex;
+      gap: 50px;
+      list-style-type: none;
+    }
+
+    .navIcon{
+      display: none;
+    }
+
+    .btnContact{
+      padding: 10px;
+    }
+
+    .heroContainer {
+       flex-direction: row;
+       margin: 50px 50px 0px 50px;
+       gap: 50px;
+     }
+
+    .heroImage{
+      margin: 20px
+    }
+
+    .categories {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 50px;
+     }
+
+     .featuresContainer{
+      flex-direction: row;
+     }
+
+     .featuresTop{
+      flex-direction: row-reverse;
+     }
+
+
+    .footerContainer{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 10px;
+      margin: 0px 100px;
+      padding: 50px 0px;
+      border-bottom: 1px solid white;
+      border-top: 1px solid white;
+    }
+
+    .inputField{
+      width: 40vw;
+    }
+
+    .otherWorks{
+      width: 20vw;
+    }
+}

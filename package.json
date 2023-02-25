@@ -1,0 +1,27 @@
+{
+  "homepage": "http://sami12389.github.io/photography",
+  "name": "photography",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.1.6",
+    "@sanity/client": "^5.2.1",
+    "@sanity/image-url": "^1.0.2",
+    "framer-motion": "^9.0.4",
+    "next": "13.1.6",
+    "next-images": "^1.8.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "sass": "^1.58.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
